@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+   margin: 0;
+   padding: 0;
+   vertical-align: middle;
+   list-style: none;
+   text-decoration: none;
+   outline: none;
+}
+
+body{
+   background-color: #222222;   
+   height: 100vh;
+   font-family: 'Poppins', sans-serif;
+}
+
+.container{
+   max-width: 1700px;
+   margin: 0 auto;
+}
+
+/* INPUT */
+
+.selection{
+   text-align: center;
+   margin: 5rem 0;
+}
+
+.selection h1{
+   margin-bottom: 2rem;
+   color: rgb(177, 177, 177); 
+   font-weight: 300;
+}
+
+.selection input{
+   box-sizing: border-box;
+   padding: 10px 10px;
+   width: 300px;
+   border: 0;
+   color: rgb(177, 177, 177);   
+   border-top-left-radius: 10px;
+   background-color: #222222;
+   box-shadow: inset 2px 2px 8px rgb(17, 17, 17),
+              inset -2px -2px 8px rgb(59, 59, 59);
+}
+
+.selection button{
+   padding: 10px 5px;
+   width: 100px;
+   cursor: pointer;
+
+   position: relative;
+   left: -1.5rem;
+
+   border: 0;
+   color: rgb(177, 177, 177);
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #222222;
+   box-shadow: 2px 2px 8px rgb(17, 17, 17),
+              -1px -1px 6px rgb(59, 59, 59);
+}
+
+/* STYLES */
+
+.lista__animes{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.flex__item{   
+   padding: 20px;
+   gap: 20px;
+   margin-bottom: 20px;
+
+   border-radius: 10px;
+   box-shadow: 2px 2px 8px rgb(17, 17, 17),
+               -2px -2px 8px rgb(59, 59, 59);
+
+   min-width: 30%;
+   min-height: 600px;
+   position: relative;   
+   transition: 0.5s;
+}
+
+.flex__item:hover{
+   background: rgb(41, 41, 41);
+}
+
+.flex__item a{
+   color: rgb(177, 177, 177);
+   display: block;
+}
+
+.flex__item h1{
+   font-size: 20px;   
+   max-width: 300px;
+}
+
+.flex__item h2{
+   font-size: 15px;
+}
+
+
+.info{
+   margin-top: 20px;
+}
+
+.flex__item p{  
+   font-size: 15px;
+}
+
+.flex__item p+p{
+   margin-top: 10px;
+}
+
+.flex__item img{
+   max-width: 60%;
+
+
+   margin: 2rem 0;
+   object-fit: cover;
+}
+
+/* CONTENT */
+
+.sinopse{   
+   position: absolute;
+   bottom: 20px;
+
+   max-width: 90%;
+   text-align: justify;
+}
