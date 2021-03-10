@@ -104,7 +104,6 @@ body{
    font-size: 15px;
 }
 
-
 .info{
    margin-top: 20px;
 }
@@ -120,12 +119,9 @@ body{
 .flex__item img{
    max-width: 60%;
 
-
    margin: 2rem 0;
    object-fit: cover;
 }
-
-/* CONTENT */
 
 .sinopse{   
    position: absolute;
@@ -133,4 +129,57 @@ body{
 
    max-width: 90%;
    text-align: justify;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1366px){
+   .container{
+      max-width: 1000px;
+   }
+
+   .flex__item{   
+      min-width: 45%;
+      min-height: 600px;
+      position: relative;   
+      transition: 0.5s;
+   }
+}
+
+@media screen and (max-width: 900px){
+   .container{
+      max-width: 700px;
+   }
+
+   .flex__item{   
+      min-width: 43%;
+      min-height: 600px;
+   }
+}
+
+@media screen and (max-width: 500px){
+   .container{
+      max-width: 90%;
+   }
+
+   .flex__item{   
+      gap: 0px;
+      box-sizing: border-box;   
+      width: 100%;
+      min-width: 100%;
+      min-height: 600px;
+   }   
+
+   .selection input{
+      border-bottom-right-radius: 10px;
+   }
+
+   .selection button{
+      left: 0;
+      margin-top: 20px;
+   }
+
+   .sinopse{    
+      max-width: 88%;
+   }
 }
